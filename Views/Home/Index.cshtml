@@ -2,6 +2,25 @@
 @{
     ViewBag.Title = "Index";
 }
-<div class="row">
-    <h3>Hello World.</h3>
+<div class="row container-fluid">
+    <div class="col-md-12">
+        <h4>List of accounts:</h4>
+        <br/>
+        <a asp-action="new" asp-controller="BankAccount" class="btn btn-outline-primary">+New account</a>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <td>Account Number:</td>
+                <td>Account Name:</td>
+                <td>Balance:</td>
+                <td>Creation date:</td>            
+            </thead>
+            <tbody>
+                <!-- Display data using foreach loop -->
+                <td>Account Number:</td>
+                <td>Account Name:</td>
+                <td>Balance:</td>
+                <td>Creation date:</td>   
+            </tbody>
+        </table>
+    </div>
 </div>

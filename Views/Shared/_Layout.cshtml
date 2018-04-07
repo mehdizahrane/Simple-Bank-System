@@ -12,7 +12,13 @@
             </environment>
 
         </head>
-        <body>
+        <body class="container-fluid">
+            @Html.Partial("_NavigationBar")
+            <div class="row jumbotron text-center">
+                <p class="text-center">
+                    <h3>Simple Bank System.</h3>
+                </p>
+            </div>
             @RenderBody()   
         <environment names="Development">
             <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
