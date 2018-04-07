@@ -1,0 +1,7 @@
+{
+    "name": "Simple Bank System",
+    "private": true,
+    "dependencies": {
+       "bootstrap" : "latest"
+    }
+}
