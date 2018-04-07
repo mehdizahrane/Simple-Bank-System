@@ -1,0 +1,20 @@
+/Users/houssine/Desktop/DotNetCore/Simple Bank System/bin/Debug/netcoreapp2.0/Simple Bank System.deps.json
+/Users/houssine/Desktop/DotNetCore/Simple Bank System/bin/Debug/netcoreapp2.0/Simple Bank System.runtimeconfig.json
+/Users/houssine/Desktop/DotNetCore/Simple Bank System/bin/Debug/netcoreapp2.0/Simple Bank System.runtimeconfig.dev.json
+/Users/houssine/Desktop/DotNetCore/Simple Bank System/bin/Debug/netcoreapp2.0/Simple Bank System.dll
+/Users/houssine/Desktop/DotNetCore/Simple Bank System/bin/Debug/netcoreapp2.0/Simple Bank System.pdb
+/Users/houssine/Desktop/DotNetCore/Simple Bank System/obj/Debug/netcoreapp2.0/Simple Bank System.csproj.CoreCompileInputs.cache
+/Users/houssine/Desktop/DotNetCore/Simple Bank System/obj/Debug/netcoreapp2.0/Simple Bank System.AssemblyInfoInputs.cache
+/Users/houssine/Desktop/DotNetCore/Simple Bank System/obj/Debug/netcoreapp2.0/Simple Bank System.AssemblyInfo.cs
+/Users/houssine/Desktop/DotNetCore/Simple Bank System/obj/Debug/netcoreapp2.0/Simple Bank System.dll
+/Users/houssine/Desktop/DotNetCore/Simple Bank System/obj/Debug/netcoreapp2.0/Simple Bank System.pdb
+/Users/houssine/Desktop/DotNetCore/SimpleBankSystem/bin/Debug/netcoreapp2.0/Simple Bank System.deps.json
+/Users/houssine/Desktop/DotNetCore/SimpleBankSystem/bin/Debug/netcoreapp2.0/Simple Bank System.runtimeconfig.json
+/Users/houssine/Desktop/DotNetCore/SimpleBankSystem/bin/Debug/netcoreapp2.0/Simple Bank System.runtimeconfig.dev.json
+/Users/houssine/Desktop/DotNetCore/SimpleBankSystem/bin/Debug/netcoreapp2.0/Simple Bank System.dll
+/Users/houssine/Desktop/DotNetCore/SimpleBankSystem/bin/Debug/netcoreapp2.0/Simple Bank System.pdb
+/Users/houssine/Desktop/DotNetCore/SimpleBankSystem/obj/Debug/netcoreapp2.0/Simple Bank System.csproj.CoreCompileInputs.cache
+/Users/houssine/Desktop/DotNetCore/SimpleBankSystem/obj/Debug/netcoreapp2.0/Simple Bank System.AssemblyInfoInputs.cache
+/Users/houssine/Desktop/DotNetCore/SimpleBankSystem/obj/Debug/netcoreapp2.0/Simple Bank System.AssemblyInfo.cs
+/Users/houssine/Desktop/DotNetCore/SimpleBankSystem/obj/Debug/netcoreapp2.0/Simple Bank System.dll
+/Users/houssine/Desktop/DotNetCore/SimpleBankSystem/obj/Debug/netcoreapp2.0/Simple Bank System.pdb

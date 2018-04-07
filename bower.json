@@ -1,7 +1,8 @@
 {
-    "name": "Simple Bank System",
+    "name": "SimpleBankSystem",
     "private": true,
     "dependencies": {
-       "bootstrap" : "latest"
+        "jQuery" : "latest",
+       "bootstrap" : "4.0.0"
     }
 }

@@ -1,0 +1,26 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta name="viewport" content="width=device-width" />
+            <title>@ViewBag.Title - Simple Bank System</title>
+            
+            <environment names="Development">
+                <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+            </environment>
+            <environment names="Staging,Production">
+                <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />     
+            </environment>
+
+        </head>
+        <body>
+            @RenderBody()   
+        <environment names="Development">
+            <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
+            <script src="/lib/jQuery/dist/jquery.js"></script>
+        </environment>
+        <environment names="Staging,Production">
+            <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+            <script src="/lib/jQuery/dist/jquery.min.js" ></script>
+        </environment>
+        </body>
+    </html>
