@@ -53,7 +53,15 @@ namespace Simple_Bank_System
             app.UseStaticFiles(); 
 
             // Applying Default Mvc Route Controller = Home, Action = Index
-            app.UseMvcWithDefaultRoute();
+            app.UseMvc( 
+                routes => {
+                    routes.MapRoute(
+                    name: "default",
+                    template: "{controller}/{action}",
+                    defaults: new { controller = "BankAccount", action = "Index" });
+                }
+            );
+
         }
     }
 }

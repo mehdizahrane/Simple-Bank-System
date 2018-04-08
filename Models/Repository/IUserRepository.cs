@@ -5,5 +5,9 @@ namespace SimpleBankSystem.Models.Repository
     public interface IUserRepository
     {
         List<AppIdentityUser> Users { get; }
+
+        AppIdentityUser GetOneUserById(string userId);
+
+        AppIdentityUser GetOneUserByEmail(string userId);
     }
 }

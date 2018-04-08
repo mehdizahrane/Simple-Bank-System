@@ -5,5 +5,7 @@ namespace SimpleBankSystem.Models.Repository
     public interface IBankAccountRepository
     {
         List<BankAccount> BankAccounts { get; }
+
+        List<BankAccount> GetBankAccountForUser(string userId);
     }
 }

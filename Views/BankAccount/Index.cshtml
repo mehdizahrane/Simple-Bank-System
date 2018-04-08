@@ -1,0 +1,38 @@
+@model List<BankAccount>
+@{
+    ViewBag.Title = "Index";
+}
+<div class="row container-fluid">
+    <div class="col-md-12">
+        <h4>List of accounts:</h4>
+        <br/>
+        <a asp-action="new" asp-controller="BankAccount" class="btn btn-outline-primary">+New account</a>
+        @if(Model.Count > 0)
+        {
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <td>Account Number:</td>
+                    <td>Account Name:</td>
+                    <td>Balance:</td>
+                    <td>Creation date:</td>            
+                </thead>
+                <tbody>
+                    <!-- Display data using foreach loop -->
+                    @foreach(var bankAccount in Model)
+                    {
+                        <tr>
+                            <td>@bankAccount.AccountNumber</td>
+                            <td>@bankAccount.AccountName</td>
+                            <td>@bankAccount.Balance</td>
+                            <td>@bankAccount.CreatedDate</td>  
+                        </tr>
+                    } 
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>No accounts to display, you can create one from the link above.</p>
+        }
+    </div>
+</div>

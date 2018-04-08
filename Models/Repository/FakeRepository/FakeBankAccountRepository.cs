@@ -2,6 +2,7 @@ using System;
 using SimpleBankSystem.Models;
 using SimpleBankSystem.Models.Repository;
 using System.Collections.Generic;
+using System.Linq;
 namespace SimpleBankSystem.Models.Repository.FakeRepository
 {
     public class FakeBankAccountRepository : IBankAccountRepository
@@ -15,5 +16,9 @@ namespace SimpleBankSystem.Models.Repository.FakeRepository
            // Password = Hello
            new BankAccount() { Id = 3, AccountName = "MNO", AccountNumber = 349602687801483, CreatedDate = DateTime.Now, Balance = 7894.56m, AccountOwnerId = "c2122d17-2118-46d2-a41a-5b20c152d8c1", Password = "8b1a9953c4611296a827abf8c47804d7"  },           
        };
+       public List<BankAccount> GetBankAccountForUser(string userId)
+       {
+           return this.BankAccounts.Where(bk => bk.AccountOwnerId.Equals(userId)).ToList();
+       }
     }
 }
