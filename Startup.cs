@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using SimpleBankSystem.Models;
+using SimpleBankSystem.Models.Repository;
+using SimpleBankSystem.Models.Repository.FakeRepository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 namespace Simple_Bank_System
@@ -25,22 +27,32 @@ namespace Simple_Bank_System
                 );
 
 
+            // Inject the dependencies
+            services.AddTransient<IUserRepository, FakeUserRepository>();
+            services.AddTransient<IBankAccountRepository, FakeBankAccountRepository>();
+
+            // Adding UserIdentity service
             services.AddIdentity<AppIdentityUser, AppIdentityRole>()
                         .AddEntityFrameworkStores<ApplicationDbContext>()
                         .AddDefaultTokenProviders();
 
+            // Adding basic mvc architecture classes
             services.AddMvc();
             services.AddRouting();
         }
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
-        {
+        {   
+            // Enabling Error Details pages => Triggered in exceptions
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseStatusCodePages();
             }
 
-            app.UseStaticFiles();
-            app.UseStatusCodePages();
+            // Enabling access to wwwroot/ files 
+            app.UseStaticFiles(); 
+
+            // Applying Default Mvc Route Controller = Home, Action = Index
             app.UseMvcWithDefaultRoute();
         }
     }

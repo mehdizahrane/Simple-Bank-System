@@ -6,6 +6,7 @@ namespace SimpleBankSystem.Models
 {
     public class ApplicationDbContext : IdentityDbContext<AppIdentityUser, AppIdentityRole, string>
     {
+     public DbSet<BankAccount> BankAccounts { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             :base(options)
         {
